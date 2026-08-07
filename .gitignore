@@ -1,0 +1,21 @@
+# secrets
+.env
+
+# private notes
+script.md
+
+# virtual envs
+.venv/
+experiments/.venv/
+
+# upstream AgentDojo clone (176MB, nested git repo; re-fetch per experiments/README.md)
+experiments/agentdojo_repo/
+
+# OS / editor junk
+.DS_Store
+
+# LaTeX intermediates
+paper/*.log
+paper/*.aux
+paper/page-*.png
+__pycache__/
