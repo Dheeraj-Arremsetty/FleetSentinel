@@ -9,6 +9,10 @@ Monitoring for Detecting Rogue LLM Agents in Large-Scale Deployments*
 All traces come from the published runs of the AgentDojo benchmark
 (https://github.com/ethz-spylab/agentdojo, `runs/` directory), sparse-cloned
 into `agentdojo_repo/`. Six models, four suites (roles), 13,360 episodes.
+A snapshot of the six models' run files is committed as
+`data/agentdojo_runs.zip` (36MB); unzip it to `agentdojo_repo/` to run
+`extract_traces.py` without cloning upstream. The extracted
+`data/traces.parquet` is also committed, so the experiment scripts run as-is.
 Label semantics (verified against `agentdojo/task_suite/task_suite.py`):
 `security: true` in a run file means the injected task was actually executed
 (the episode is *compromised*).
